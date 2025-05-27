@@ -40,6 +40,21 @@
       padding: 2rem;
       max-width: 800px;
       margin: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .kangaroo {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
     }
 
     footer {
@@ -74,15 +89,19 @@
   </nav>
 
   <main>
-    <h2>About This Site</h2>
-    <p>This website is here to help you stay organized and up-to-date with everything happening in class.</p>
+    <div class="content">
+      <h2>About This Site</h2>
+      <p>This website is here to help you stay organized and up-to-date with everything happening in class.</p>
 
-    <h3>Quick Links</h3>
-    <ul>
-      <li><a href="https://canvas.afs.org" target="_blank">Canvas</a></li>
-      <li><a href="https://docs.google.com" target="_blank">Google Docs</a></li>
-      <li><a href="mailto:efeeley@afs.org">Email Mr. Feeley</a></li>
-    </ul>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="https://canvas.afs.org" target="_blank">Canvas</a></li>
+        <li><a href="https://docs.google.com" target="_blank">Google Docs</a></li>
+        <li><a href="mailto:efeeley@afs.org">Email Mr. Feeley</a></li>
+      </ul>
+    </div>
+
+    <img class="kangaroo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kangaroo_Australia_01.jpg/640px-Kangaroo_Australia_01.jpg" alt="Kangaroo">
   </main>
 
   <footer>
@@ -90,3 +109,4 @@
   </footer>
 </body>
 </html>
+
